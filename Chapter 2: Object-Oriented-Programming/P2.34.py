@@ -1,3 +1,7 @@
+#Write a Python program that inputs a document and then outputs a barchart
+#plot of the frequencies of each alphabet character that appears in
+#that document.
+
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 import os
@@ -61,9 +65,9 @@ class AlphabetFrequency:
         plt.xticks(x_pos, x)
         plt.show()
            
-
-x=AlphabetFrequency(fname="mac.txt", fpath=r"c:/users/pabhati/desktop")
-print(x.read_file())
-x.check_files()
-x.make_plot()
+if __name__ == '__main__':
+    x=AlphabetFrequency(fname="mac.txt", fpath=r"c:/users/pabhati/desktop")
+    print(x.read_file())
+    x.check_files()
+    x.make_plot()
 
