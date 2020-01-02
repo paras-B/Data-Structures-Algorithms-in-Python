@@ -1,3 +1,6 @@
+#Write a Python program that inputs a polynomial in standard algebraic
+#notation and outputs the first derivative of that polynomial.
+
 import matplotlib.pyplot as plt
 import numpy as np
 plt.style.use('seaborn-whitegrid')
@@ -61,10 +64,10 @@ class Polynomial:
 
 
 
-
-a = Polynomial(4,3,2)
-print(a)
-print(a.func())
-print(a.first_derivative())
-print(a.make_plot())
+if __name__ == '__main__':
+    a = Polynomial(4,3,2)
+    print(a)
+    print(a.func())
+    print(a.first_derivative())
+    print(a.make_plot())
 
