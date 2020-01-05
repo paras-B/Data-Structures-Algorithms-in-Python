@@ -4,7 +4,6 @@ following sentence one hundred times: “I will never spam my friends
 again.” Your program should number each of the sentences and it should
 make eight different random-looking typos."""
 
-from itertools import permutations
 import random
 
 punish_line = "I will never spam my friends again."
