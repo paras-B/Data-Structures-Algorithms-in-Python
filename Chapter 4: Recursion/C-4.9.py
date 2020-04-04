@@ -6,7 +6,8 @@ values in a sequence without using any loops.
 def recursive_min(arr):
     if len(arr)==1:
         return arr[0]
-    return min(arr[len(arr)-1], recursive_min(arr[:len(arr)-1]))
+    else:
+        return min(arr[len(arr)-1], recursive_min(arr[:len(arr)-1]))
 
 def recursive_max(arr):
     if len(arr)==1:
